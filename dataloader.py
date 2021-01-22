@@ -13,7 +13,7 @@ class DIV2K:
         
         _scales = [2,3,4,8]
         
-        if scale in scales:
+        if scale in _scales:
             self.scale = scale
         else:
             raise ValueError(f'scale must be in ${_scales}')
