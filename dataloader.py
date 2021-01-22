@@ -12,7 +12,7 @@ class DIV2K:
         self._nitre_2018 = True
         
         _scales = [2,3,4,8]
-        
+        print("Available Scales = ", _scales)
         if scale in _scales:
             self.scale = scale
         else:
