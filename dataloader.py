@@ -11,12 +11,12 @@ class DIV2K:
         
         self._nitre_2018 = True
         
-        _scales = [2,3,4,8]
-        print("Available Scales = ", _scales)
-        if scale in _scales:
-            self.scale = scale
-        else:
-            raise ValueError(f'scale must be in ${_scales}')
+        # _scales = [2,3,4,8]
+        # print("Available Scales = ", _scales)
+        # if scale in _scales:
+        #     self.scale = scale
+        # else:
+        #     raise ValueError(f'scale must be in ${_scales}')
         
         if subset == 'train':
             self.image_ids = range(1,801)
