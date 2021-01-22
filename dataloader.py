@@ -72,7 +72,7 @@ class DIV2K:
         if not os.path.exists(self._hr_cache_index()):
             self._populate_cache(ds, self._hr_cache_file())
 
-    return ds
+        return ds
     
     def lr_dataset(self):
         if not os.path.exists(self._lr_images_dir()):
@@ -81,7 +81,7 @@ class DIV2K:
         ds = self._images_dataset(self._lr_image_files()).cache(self._lr_cache_file())
         if not os.path.exists(self._lr_cache_index()):
             self._populate_cache(ds, self._lr_cache_file())
-    return ds
+        return ds
         
     def _hr_cache_file(self):
         return os.path.join(self.caches_dir, f'DIV2K_{self.subset}_HR.cache')
