@@ -1,11 +1,11 @@
 from tensorflow.python.data.experimental import AUTOTUNE
 import os
+import tensorflow as tf
 
 '''
  Code from @ https://github.com/krasserm/super-resolution/blob/master/data.py
 '''
 
-from tensorflow.python.data.experimental import AUTOTUNE
 
 
 class DIV2K:
